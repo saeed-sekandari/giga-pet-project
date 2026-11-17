@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <meta name="description" content="A small virtual pet game">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Your Giga Pet</title>
+    <title>Buddy's Giga Pet</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Load jQuery before script.js. Both scripts wait until the HTML is read. -->
+    <!-- Load jQuery before our JavaScript file. -->
     <script
       src="https://code.jquery.com/jquery-2.2.1.min.js"
       integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
       crossorigin="anonymous"
       defer>
     </script>
+
     <script src="script.js" defer></script>
   </head>
 
@@ -25,31 +26,40 @@
 
     <main>
       <section class="pet-image-container">
-        <!-- This points to the image currently in your images folder. -->
+        <!-- Buddy's pet image. -->
         <img
           class="pet-image"
-          src="images/hound.jpg"
-          alt="Your virtual pet">
+          src="images/buddy.jpg"
+          alt="Buddy the virtual pet">
       </section>
 
       <section class="dashboard">
-        <div>Name: <strong><span class="name"></span></strong></div>
-        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>
+          Name:
+          <strong><span class="name"></span></strong>
+        </div>
+
+        <div>
+          Weight:
+          <strong><span class="weight"></span> pounds</strong>
+        </div>
+
         <div>
           Happiness:
-          <strong><span class="happiness"></span> tail wags (per min)</strong>
+          <strong>
+            <span class="happiness"></span> tail wags (per min)
+          </strong>
         </div>
 
         <div class="button-container">
           <button class="treat-button" type="button">Treat</button>
           <button class="play-button" type="button">Play</button>
           <button class="exercise-button" type="button">Exercise</button>
-          <!-- This new button connects to clickedNapButton() in script.js. -->
           <button class="nap-button" type="button">Nap</button>
         </div>
 
-        <!-- Starts hidden. script.js fills this with a pet comment and shows it. -->
-        <p class="pet-comment" aria-live="polite" style="display: none;"></p>
+        <!-- JavaScript displays Buddy's latest message here. -->
+        <p class="pet-comment" aria-live="polite"></p>
       </section>
     </main>
   </body>
