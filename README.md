@@ -10,6 +10,10 @@ This is a virtual pet game built with HTML, CSS, JavaScript, and jQuery.
 - Click Nap to increase happiness.
 - Buddy needs care when his weight or happiness reaches zero.
 
-## Live Website
+GitHub Pages:
 
-[Play Buddy's Giga Pet](https://saeed-sekandari.github.io/giga-pet-project/)
+https://saeed-sekandari.github.io/giga-pet-project/
+
+GitHub Repository:
+
+https://github.com/saeed-sekandari/giga-pet-project
